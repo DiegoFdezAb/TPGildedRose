@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gildedrose.GildedRoseTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2022-10-01T21:23:40" hostname="LAPTOP-A2BC1LTT" time="0.043">
+  <properties/>
+  <testcase name="Test that the quality of non-Sulfuras decreases" classname="com.gildedrose.GildedRoseTest" time="0.022"/>
+  <testcase name="Test that the quality of Backstage passes increases" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the quality of Aged Brie increases" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the quality is never more than 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the quality of Backstage passes is 0 after concert" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test that the quality of Sulfuras is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test that the quality is decreased" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the quality of Backstage is never more than 50 when sellIn is less than 11" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test that the quality of Sulfuras don't decrease when sellIn is negative" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the quality is never negative" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the sellIn is decreased" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the quality of Backstage is never more than 50 when sellIn is less than 6" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
