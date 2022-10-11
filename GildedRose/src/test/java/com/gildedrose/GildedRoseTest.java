@@ -126,5 +126,34 @@ class GildedRoseTest {
     app.updateQuality();
     assertThat(element.quality, is(50));
   }
+
+  //These three test are added for the refactoring
+
+  @Test
+  @DisplayName("Test that sellin of Aged Brie is more than 0")
+  void testSellInAgedBrie() {
+    Item element = new Item("Aged Brie", 1, 0);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.sellIn, is(0));
+  }
+
+  @Test
+  @DisplayName("Test that quality of Backstage is more than 50")
+  void testQualityBackstagePassesMoreThan50() {
+    Item element = new Item("Backstage passes to a TAFKAL80ETC concert", 5, 50);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality, is(50));
+  }
+
+  @Test
+  @DisplayName("Test the quality of Backstage increase by 2 when sellIn is less than 11")
+  void testQualityBackstageincreaseWhenSellInLessThan11() {
+    Item element = new Item("Backstage passes to a TAFKAL80ETC concert", 10, 0);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality, is(2));
+  }
 }
 
