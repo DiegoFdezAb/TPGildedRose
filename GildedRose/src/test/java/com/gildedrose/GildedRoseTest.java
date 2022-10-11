@@ -4,6 +4,8 @@ import org.junit.jupiter.api.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
+import java.beans.Transient;
+
 class GildedRoseTest {
 
   @Test
@@ -124,6 +126,5 @@ class GildedRoseTest {
     app.updateQuality();
     assertThat(element.quality, is(50));
   }
-
 }
 
