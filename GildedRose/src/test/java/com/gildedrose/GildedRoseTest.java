@@ -4,8 +4,6 @@ import org.junit.jupiter.api.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-import java.beans.Transient;
-
 class GildedRoseTest {
 
   @Test
@@ -154,6 +152,35 @@ class GildedRoseTest {
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
     assertThat(element.quality, is(2));
+  }
+
+  //Test for Conjured items
+
+  @Test
+  @DisplayName("Test that the quality of Conjured items decreases")
+  void testQualityConjured() {
+    Item element = new Item("Conjured Mana Cake", 0, 10);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality, is(6));
+  }
+
+  @Test
+  @DisplayName("Test that the quality of Conjured items is never negative")
+  void testQualityConjuredNeverNegative() {
+    Item element = new Item("Conjured Mana Cake", 0, 0);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality, is(0));
+  }
+
+  @Test
+  @DisplayName("Test that the quality of Conjured is  if the sellIn is positive")
+  void testQualityConjuredNegativeSellInPositive() {
+    Item element = new Item("Conjured Mana Cake", 1, 0);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality, is(0));
   }
 }
 

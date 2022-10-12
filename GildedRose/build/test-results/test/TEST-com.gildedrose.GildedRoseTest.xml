@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2022-10-11T13:24:31" hostname="LAPTOP-A2BC1LTT" time="0.041">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2022-10-12T15:21:40" hostname="LAPTOP-A2BC1LTT" time="0.086">
   <properties/>
-  <testcase name="Test that the quality of non-Sulfuras decreases" classname="com.gildedrose.GildedRoseTest" time="0.022"/>
-  <testcase name="Test that the quality of Backstage passes increases" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test that the quality of Aged Brie increases" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="Test that the quality is never more than 50" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test that the quality of non-Sulfuras decreases" classname="com.gildedrose.GildedRoseTest" time="0.042"/>
+  <testcase name="Test the quality of Backstage increase by 2 when sellIn is less than 11" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test that the quality of Backstage passes increases" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test that the quality of Aged Brie increases" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test that the quality is never more than 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test that the quality of Backstage passes is 0 after concert" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test that the quality of Sulfuras is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="Test that the quality is decreased" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test that the quality of Backstage is never more than 50 when sellIn is less than 11" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="Test that the quality of Sulfuras don't decrease when sellIn is negative" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="Test that the quality is never negative" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="Test that the sellIn is decreased" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the quality of Conjured is  if the sellIn is positive" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the quality of Backstage passes is 0 after concert" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test that the quality of Conjured items is never negative" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test that the quality of Sulfuras is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that sellin of Aged Brie is more than 0" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the quality is decreased" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test that the quality of Backstage is never more than 50 when sellIn is less than 11" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that quality of Backstage is more than 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the quality of Sulfuras don't decrease when sellIn is negative" classname="com.gildedrose.GildedRoseTest" time="0.002"/>
+  <testcase name="Test that the quality of Conjured items decreases" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the quality is never negative" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that the sellIn is decreased" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test that the quality of Backstage is never more than 50 when sellIn is less than 6" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
