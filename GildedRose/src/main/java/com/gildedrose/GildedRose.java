@@ -66,18 +66,18 @@ class GildedRose {
     // // This is the factored code
 
     public void updateQuality() {
-        for (int i = 0; i < items.length; i++) {
-            switch(items[i].name) {
+        for (Item item: items) {
+            switch(item.name) {
                 case "Aged Brie":
-                    updateQualityForAgedBrie(items[i]);
+                    updateQualityForAgedBrie(item);
                     break;
                 case "Backstage passes to a TAFKAL80ETC concert":
-                    updateQualityForBackstagePasses(items[i]);
+                    updateQualityForBackstagePasses(item);
                     break;
                 case "Sulfuras, Hand of Ragnaros":
                     break;
                 default:
-                    updateQualityForOtherItem(items[i]);
+                    updateQualityForOtherItem(item);
                     break;
             }
         }
