@@ -132,11 +132,3 @@ class GildedRose {
         }
     }
 }
-             
-      
-    
-    
-
-    
-
-    

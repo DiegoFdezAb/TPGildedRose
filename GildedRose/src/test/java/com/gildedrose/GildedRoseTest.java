@@ -34,6 +34,15 @@ class GildedRoseTest {
   }
 
   @Test
+  @DisplayName("Test that the quality decreases if sellIn is negative")
+  void testQualityIfSellin() {
+    Item element = new Item("foo", 0, 10);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality, is(8));
+  }
+
+  @Test
   @DisplayName("Test that the quality is never negative")
   void testQualityNeverNegative() {
     Item element = new Item("foo", 0, 0);
@@ -86,15 +95,6 @@ class GildedRoseTest {
     app.updateQuality();
     assertThat(element.quality, is(0));
   }
-  
-  @Test
-  @DisplayName("Test that the quality of non-Sulfuras decreases")
-  void testQualityNonSulfuras() {
-    Item element = new Item("foo", 0, 10);
-    GildedRose app = new GildedRose(new Item[] {element});
-    app.updateQuality();
-    assertThat(element.quality, is(8));
-  }
 
   @Test
   @DisplayName("Test that the quality of Sulfuras don't decrease when sellIn is negative")
@@ -104,8 +104,6 @@ class GildedRoseTest {
     app.updateQuality();
     assertThat(element.quality, is(80));
   }
-
-  //These two last are not really usefull but I wanted to put them to have the jacoco full coverage
 
   @Test
   @DisplayName("Test that the quality of Backstage is never more than 50 when sellIn is less than 11")
@@ -175,7 +173,7 @@ class GildedRoseTest {
   }
 
   @Test
-  @DisplayName("Test that the quality of Conjured is  if the sellIn is positive")
+  @DisplayName("Test that the quality of Conjured is 0 if the sellIn is positive")
   void testQualityConjuredNegativeSellInPositive() {
     Item element = new Item("Conjured Mana Cake", 1, 0);
     GildedRose app = new GildedRose(new Item[] {element});
